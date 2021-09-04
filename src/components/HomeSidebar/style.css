@@ -1,0 +1,13 @@
+sidebar{
+    min-width: max-content;
+    height: 99vh;
+    display: inline-block;
+    overflow: hidden;
+    position: fixed;
+}
+
+#bodyPortrait{
+    /* min height is arbitrary here */
+    height: clamp( 600px, 100% , 110% );
+    position: relative;
+}

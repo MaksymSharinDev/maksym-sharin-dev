@@ -1,0 +1,8 @@
+#glitchyCanvasWrapper{
+    opacity: 0.35;
+    height: max-content;
+    width: max-content;
+    position: absolute;
+    z-index: 0;
+    padding: 25px;
+}

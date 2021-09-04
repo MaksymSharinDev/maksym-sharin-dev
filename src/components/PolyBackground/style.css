@@ -1,0 +1,12 @@
+.background-polygons {
+    position: fixed;
+    z-index: -3;
+    background: radial-gradient(ellipse at center, #363636 0%, black 100%);
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+.background-polygons svg{
+    height: 100%;
+    width: 100%;
+}
