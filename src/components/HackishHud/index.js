@@ -1,7 +1,6 @@
 import './style.css'
 import React, {createRef} from "react";
 import GlitchyCanvas from "../GlitchyCanvas";
-import {Col, Row} from "react-bootstrap";
 
 class HackishHud extends React.Component {
     state = { width: 0, height: 0}
@@ -61,7 +60,7 @@ class HackishHud extends React.Component {
         loop.start()
 
         class LetterShuffler {
-            constructor(wrapper, letter, {duration = 45} = {}) {
+            constructor(wrapper, letter) {
                 this.SHUFFLING_VALUES = [
                     '!', '§', '$', '%',
                     '&', '/', '(', ')',
@@ -84,8 +83,7 @@ class HackishHud extends React.Component {
                 this.update = this.update.bind(this);
 
 
-                // Regex Thank to @milesmanners !
-                // https://codepen.io/milesmanners/
+
                 if (/[+\-| ]/.test(letter)) {
                     this.wrapper.classList.add('purple')
                 } else {

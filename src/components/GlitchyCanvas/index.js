@@ -19,13 +19,12 @@ class GlitchyCanvas extends React.Component {
         this.W = this.c.width = this.w.innerWidth;
         this.H = this.c.height = this.w.innerHeight;
         this.HW = this.W / 2;
-        this.HH = this.H / 2;
         this.diameter = 20;
     };
     f = t => {
         t /= 3000;
         this.C.clearRect(0, 0, this.W, this.H);
-       this. C.globalCompositeOperation = 'lighter';
+        this.C.globalCompositeOperation = 'lighter';
         for (let k = 0; k < 3; k++) {
             if (k === 0) this.C.fillStyle = '#FF0000';
             if (k === 1) this.C.fillStyle = '#00FF00';
