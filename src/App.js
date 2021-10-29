@@ -51,10 +51,11 @@ function App() {
 
                                 </main>
                             </Col>
+
                             <Col xl={12} xxl={5}>
 
                                 <div className={'d-none d-md-block d-lg-none'} style={{height: '10vh'}}/>
-                                <section id={'experience'}>
+                                <section id={'experience'} hidden={true}>
                                     <h2 className={'text-center'}> My Runtime Logs </h2>
                                     <div style={{height: '5px'}}/>
                                     <CyberCardsCarousel
