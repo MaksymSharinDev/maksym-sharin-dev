@@ -1,3 +1,8 @@
 import './style.css'
-const GlitchTitle = ( {text, className} ) => <h1 className={'glitch ' + className} data-text={text}> {text} </h1>
+const GlitchTitle =
+    ( {text, className = ''} ) =>
+        <p className={ 'glitch' + ' ' + className}
+            data-text={text}>
+            {text}
+        </p>
 export {GlitchTitle}

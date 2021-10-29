@@ -5,13 +5,44 @@
 
 body{
   font-family: "Hacked";
-  height: 100vh;
+  height: 99vh;
+  width: 99vw;
+  overflow-x: hidden;
 }
 
-main{
-  height: max-content;
-  width: max-content;
+
+
+main, section{
+  min-height: 715px;
+  min-width: 650px;
 }
+section{
+  position: relative;
+}
+h2{
+  color: blueviolet;
+  margin-top: 25px;
+  font-size: 55px;
+}
+
+@media screen and (max-width: 768px) {
+  main, section{
+    min-height: 550px;
+    min-width: 350px;
+  }
+}
+
+.cyber-card{
+  width: 100%;
+  min-height: clamp( 150px, 300px , 400px );
+  background-color: RGBA(0,0,0,0.75);
+  border: 4px solid white;
+  border-radius: 35px 0 35px 0;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+
 
 
 

@@ -1,5 +1,6 @@
 
-h1{
+p.glitch{
+    line-height: 0.6;
     margin-top: 25px;
 
 }
@@ -11,7 +12,11 @@ h1{
     font-weight: bolder;
     position: relative;
     width: max-content;
-
+}
+@media screen and (max-width: 768px) {
+    .glitch {
+        margin: 0
+    }
 }
 
 @keyframes noise-anim {

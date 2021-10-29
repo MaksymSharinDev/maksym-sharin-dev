@@ -1,8 +1,8 @@
 import './style.css'
 const HomeSidebar = () =>
-    <sidebar id={'sidebarLeft'}>
+    <aside id={'asideLeft'}>
         <img id={'bodyPortrait'} src={'assets/img/portrait.gif'} alt={'portrait gif'}/>
-    </sidebar>
+    </aside>
 
 
 export default HomeSidebar
